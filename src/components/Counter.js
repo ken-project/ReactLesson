@@ -4,8 +4,7 @@ import "./Counter.css";
 export default function Counter(){
   const [count, setCount] = useState(0);
 
-  const incrementCount = () => {
-    const newCount = count === 10 ? 0 : count + 1;
+  const incrementCount = () => {    const newCount = count >= 10 ? 0 : count + 1;
     setCount(newCount);
   };
 
