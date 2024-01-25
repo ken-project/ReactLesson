@@ -26,7 +26,7 @@ export default function Field() {
         onBlur={handleBlur} // フォーカスが外れたときのイベントハンドラを追加
       />
       <p>入力されたテキスト: {inputText}</p>
-      <p>{focusMessage}</p> {/* フォーカスメッセージを表示 */}
+      {focusMessage && <p>{focusMessage}</p>}
     </div>
   );
 }
